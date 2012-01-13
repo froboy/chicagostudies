@@ -1,0 +1,458 @@
+/* Copyright 2012 Chicago Studies, The University of Chicago, The College of The University of Chicago. Designed by Pieter Ouwerkerk */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #556270 url(../images/bg.png) repeat-x;
+}
+a {
+	color: #005E81;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 15px;
+}
+tr.even,
+tr.odd {
+	background-color: inherit;
+	border-bottom: none;
+	padding: 0;
+}
+.container {
+	width: 980px;
+	margin: 0 auto;
+	background: #fff;
+}
+/* List Style */
+ul li {
+	font-size: 13px;
+	line-height: 16px;
+	list-style-image: url("http://www.uchicago.edu/i/template/greybullet.gif");
+	margin: 0 0 8px 14px;
+}
+ul.primary {
+	margin: inherit;
+	padding: 0;
+}
+ul.inline li {
+	padding: 0;
+}
+.list-widget ul li, .item-list ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.block-aggregator .item-list ul li, .list-widget ul li {
+	padding: 5px 0;
+	list-style: none;
+	border-bottom: 1px solid #ddddd5;
+}
+.list-widget ul li .event-date {
+	font-size: 11px;
+}
+.list-widget ul li .event-summary {
+	font-size: 12px;
+	line-height: 16px;
+}
+#events .more-link {
+	margin: 5px 0;
+	float: right;
+}
+.block-aggregator .item-list ul li a, .list-widget li a {
+	font-weight: bold;
+}
+.block-aggregator .item-list ul li:last-child, .list-widget li:last-child {
+	border-bottom: none;
+}
+/* Page */
+h1#page-title, h2#page-title {
+	font-weight: normal;
+	padding: 0 0 5px;
+	margin: 0 0 7px;
+	border-bottom: 1px solid #ddddd5;
+}
+#page {
+	position: relative;
+	min-height: 100%;
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+}
+/* Header */
+#logo a, a#logo {
+	display: block;
+	height: 150px;
+}
+a#logo {
+	background: url(../images/mastheads/alt.jpg);
+}
+/* Engage Chicago */
+#logo.category-2 {
+	background: url(../images/mastheads/bus.jpg);
+}
+/* Discover Chicago */
+#logo.category-3 {
+	background: url(../images/mastheads/map.jpg);
+}
+/* Chicago Resources */
+#logo.category-4 {
+	background: url(../logo.png);
+}
+#header {
+	background: #000;
+}
+#header #logo {
+	width: 980px;
+}
+#site-header, #site-subheader {
+	margin-bottom: 0;
+}
+/* Navbar */
+.nav-container {
+	margin: 0 auto;
+	width: 980px;
+}
+#navbar, #navbar a {
+	background: #000;
+	overflow: auto;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10.5pt;
+}
+#navbar ul li a:hover {
+	color: #999999;
+}
+#navbar ul li a.active:hover, #navbar ul li a.active {
+	color: #A6C484;
+	text-decoration: none;
+	cursor: pointer;
+}
+#navbar ul {
+	margin: 7px 10px;
+}
+#main-menu {
+	float: left;
+}
+#resources-navigation li a {
+	font-size: 12px;
+	background-color: #8CB06D;
+	border-top: 2px solid #FFFFFF;
+	color: #FFFFFF;
+	display: block;
+	line-height: 14px;
+	min-height: 13px;
+	padding: 5px 10px 5px 15px;
+}
+#resources-navigation li a.active {
+	background-color: #999999;
+	color: #FFFFFF;
+}
+#resources-navigation li a:hover {
+	background-color: #A6C484;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* Search */
+#block-search-form {
+	margin: 0;
+}
+#search {
+	margin: 0;
+	padding: 6px 10px 7px;
+	float: right;
+	width: 220px;
+	background: rgba(255,255,255,0.25);
+}
+#search .element-invisible {
+	display: none;
+}
+/* Footer */
+#footer {
+	overflow: auto;
+	color: #BDBDBD;
+	line-height: 18px;
+	font-size: 11px;
+	background: #767676;
+	padding: 15px 0;
+}
+#footer * {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding: 0;
+	margin-bottom: 0;
+}
+#footer a {
+	color: #fff;
+}
+#footer ul li {
+	font-size: 11px;
+}
+#footer #uchicago a {
+	background: url(../images/uchicago.gif);
+	display: block;
+	width: 261px;
+	padding-top: 56px;
+	height: 0;
+	overflow: hidden;
+}
+#sitesearch {
+	background-color: #767676;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+#search .form-text {
+	background: #fff;
+	border: 1px solid;
+	color: #333;
+	font-size: 10px;
+	padding: 1px 0 3px 3px;
+	width: 175px;
+	border-color: #CCCCCC;
+}
+#search .form-submit {
+	height: 25px;
+	width: 30px;
+	position: absolute;
+}
+/* Features and Articles */
+.article .photo img {
+	width: 280px;
+}
+#sidebar-right .photo img {
+	width: 220px;
+}
+.article #content {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #F6F5F2;
+	background-image: url(../images/gradients/boxBlend_light.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+#sidebar #featured-stories .node-author {
+	display: none;
+}
+#sidebar #featured-stories td {
+	border-bottom: 1px solid #ddddd5;
+}
+#sidebar #featured-stories .node-title {
+	width: 250px;
+	padding: 7px 14px;
+}
+.region.clearfix {
+	margin-top: 20px;
+}
+#article-header #title {
+	float: left;
+	margin-bottom: 10px;
+}
+#article-header .date {
+	float: right;
+	color: #afafa8;
+}
+#article-header #title h2, #article-header #title h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 18pt;
+}
+#article-header #title h3 {
+	font-weight: normal;
+}
+.article-body {
+	border-top: 1px solid #ddddd5;
+	padding-top: 10px;
+	clear: both;
+}
+.block li {
+	font-size: 9pt;
+	padding: 0;
+}
+/* Terms */
+#term-header {
+	color: #FFFFFF;
+	padding: 0;
+	background-color: #7DB3CB;
+	min-height: 225px;
+}
+#term-header .region {
+	margin-top: 0;
+}
+#term-header img {
+	margin: 0;
+	float: right;
+	padding: 0;
+}
+#term-header #quote {
+	width: 282px;
+	float: left;
+	margin: 10px 20px 0;
+}
+#term-header #quote h2, #term-header #quote h3 {
+	font-weight: normal;
+}
+#term-header #quote h2 {
+	color: #000000;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+#term-header #quote h3 {
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 18px;
+}
+#views_slideshow_cycle_div_hero-block_0 {
+	height: 50px;
+}
+/* Home */
+#columns.container-16 {
+	padding: 20px 0;
+}
+#featured-slider {
+	background: rgba(255,255,255, 0.5);
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+#featured-slider div {
+	margin: 0;
+}
+.view-hero {
+	float: left;
+	height: 277px;
+}
+.view-hero img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.featureTitle, .featureSubtitle {
+	z-index: 100;
+	margin: 10pt 10pt 0;
+	width: 540px;
+	display: block;
+	line-height: 100%;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.5);
+}
+.featureTitle a, .featureSubtitle {
+	color: #fff;
+}
+.featureTitle a:hover, .featureSubtitle a:hover {
+	text-decoration: none;
+}
+.featureTitle {
+	font-size: 28pt;
+	position: relative;
+}
+.featureSubtitle {
+	font-size: 18pt;
+	position: relative;
+	font-weight: normal;
+}
+/* Blog that Works Block */
+#block-aggregator-feed-1 h2 {
+	background: url(../images/the-blog-that-works-title.png) no-repeat;
+	width: 411px;
+	height: 0;
+	padding-top: 25px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	left: -72px;
+	margin: 20px 0;
+}
+#block-aggregator-feed-1 {
+	width: 345px;
+	position: absolute;
+	right: 0;
+	z-index: 100;
+	height: 277px;
+	margin: 0;
+	color: #FFF;
+	border-left: 1px solid #fff;
+	background: rgba(0,0,0,0.5) !important;
+	background: #333;
+}
+#block-aggregator-feed-1 .more-link a {
+	text-transform: uppercase;
+	font-size: 10pt;
+	float: right;
+	background: url(../images/read-more.png) no-repeat !important;
+	background: url(../images/read-more.gif) no-repeat;
+	width: 187px;
+	height: 0;
+	display: block;
+	overflow: hidden;
+	padding-top: 11px;
+	border-bottom: 1px solid rgba(254,255,254,0);
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+#block-aggregator-feed-1 .more-link a:hover {
+	border-bottom: 1px solid rgba(254,255,254,0.75);
+}
+#block-aggregator-feed-1 li {
+	margin: 10px;
+	border: none;
+	padding: 0;
+}
+#block-aggregator-feed-1 a {
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+}
+.front #columns .block, #sidebar .block, .article .photo, .sidebar .block {
+	background-color: #F6F5F2;
+	margin-bottom: 15px;
+	background-image: url(../images/gradients/boxBlend_light.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.front #columns .block .content, #sidebar .block .content, .sidebar .block .content {
+	padding: 10px 15px;
+}
+.front #columns .block h2, #sidebar .block h2, .sidebar .block h2 {
+	width: 94%;
+	margin: 0;
+	padding: 6px 3% 5px;
+	color: #FFFFFF;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.front #columns #facebook h2 {
+	background-color: #6d85b5;
+}
+.front #columns .block-aggregator h2, .sidebar .block h2 {
+	background-color: #EC931B;
+}
+.front #columns .block-flickr h2, #events.block h2 {
+	background-color: #A6C484;
+}
+#columns .block h2 a {
+	color: inherit;
+}
+#columns .block h2 a:hover {
+	opacity: 0.75;
+	text-decoration: none;
+}
+.front #columns .block-flickr .content {
+	padding: 0;
+}
+/* Flickr */
+a .flickr-photo-img {
+	margin: 5px 0 0 8px;
+	padding: 3px;
+	background: #fff;
+	border: 1px solid #ddddd5;
+}
+.flickr-photo-img:hover {
+	border: 1px solid #999;
+}

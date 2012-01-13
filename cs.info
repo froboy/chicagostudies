@@ -1,0 +1,40 @@
+; $Id: ninesixty.info,v 1.1.2.1 2009/02/13 15:41:54 dvessel Exp $
+; The Official Chicago Studies theme is based on 960.gs!
+; Author: pco@uchicago.edu
+
+name        = Chicago Studies Theme
+
+version 	= 1.0
+logo 		= home.jpeg
+screenshot  = screenshot.png
+description = Official Chicago Studies theme ported to Drupal by <a href="http://pieterouwerkerk.com">Pieter Ouwerkerk</a> for the <a href="http://ucsc.uchicago.edu">University Community Service Center</a>.
+
+core        = 7.x
+engine = phptemplate
+base theme = ninesixty
+
+; Stylesheets:
+; stylesheets[all][] = styles/framework/reset.css
+; stylesheets[all][] = styles/framework/text.css
+; stylesheets[all][] = styles/framework/960.css
+; stylesheets[all][] = styles/framework/debug.css
+; stylesheets[all][] = styles/framework/cs.css
+
+; Sub-Theme Stylesheets:
+stylesheets[all][] = styles/system.menus.css
+stylesheets[all][] = styles/cs.css
+
+; Regions:
+regions[page_top]       = Page top
+regions[header]         = Header
+regions[search_box]     = Search Box
+regions[highlighted]    = Highlight
+regions[help]           = Help
+regions[hero]			= Hero
+regions[content]        = Content
+regions[sidebar_first]  = Left sidebar
+regions[sidebar_mid]	= Middle sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer]         = Footer
+regions[footer_links]   = Footer Links
+regions[page_bottom]    = Page bottom
