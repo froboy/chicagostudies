@@ -430,7 +430,7 @@ a#logo {
 .front #columns #facebook h2 {
 	background-color: #6d85b5;
 }
-.front #columns .block-aggregator h2, .sidebar .block h2 {
+.front #columns .block-aggregator h2, .sidebar .block h2, #sidebar .block h2 {
 	background-color: #EC931B;
 }
 .front #columns .block-flickr h2, #events.block h2 {

@@ -57,7 +57,11 @@ $current = taxonomy_term_load(arg(2));
 	  <div id="quote">
 	  <?php print $current->field_quote['und'][0]['value']; ?>
 	  </div>
-	  <img src="<? echo $base_path."sites/default/files/images/resources/".$current->field_home_photo['und'][0]['filename']; ?>" alt="<? echo $base_path."sites/default/files/images/resources/".$current->field_home_photo['und'][0]['alt']; ?>" />
+	  <?php
+        $photo_url = file_create_url("public://images/resources/".$current->field_home_photo['und'][0]['filename']);
+	    $photo_alt = $current->field_home_photo['und'][0]['alt'];
+	  ?>
+	  <img src="<?php print $photo_url; ?>" alt="<?php print $photo_alt; ?>" />
 </div>
 <?php endif; ?>
 <div class="container-16 clearfix article"">

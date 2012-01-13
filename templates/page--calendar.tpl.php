@@ -64,7 +64,7 @@
   </div>
   <div id="sidebar-right" class="region sidebar clearfix grid-5">
   	<div class="block">
-  	<? 	print "<h2>".$title."</h2>";
+  	<?php 	print "<h2>".$title."</h2>";
 		print "<div class=\"content\">".$node->body['und'][0]['safe_value']."</div>";
 		//print render($page["sidebar_second"]);
 	?>	

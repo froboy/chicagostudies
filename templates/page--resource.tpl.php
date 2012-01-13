@@ -74,8 +74,12 @@
 	</pre>
 	<?php if(!empty($node->field_article_photo)): ?>
     <div class="photo">
-      <img src="<?php print "../sites/default/files/images/resources/".$node->field_article_photo['und'][0]['filename']; ?>" alt="<?php print $node->field_article_photo['und'][0]['alt']; ?>" />
-      <p><?php echo $node->field_article_photo['und'][0]['alt']; ?></p>
+      <?php
+        $photo_url = file_create_url("public://images/resources/".$node->field_article_photo['und'][0]['filename']);
+	    $photo_alt = $node->field_article_photo['und'][0]['alt'];
+	  ?>
+      <img src="<?php print $photo_url; ?>" alt="<?php print $photo_alt; ?>" />
+      <p><?php print $photo_alt; ?></p>
     </div>
     <?php endif; ?>
 	<?php if(!empty($node->field_sidebar_title)): ?>
