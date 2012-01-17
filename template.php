@@ -16,6 +16,8 @@ function cs_preprocess_page(&$variables) {
    	    $variables['theme_hook_suggestions'][] = 'page__' . $nodetype;
     }
 	$logo = base_path() . path_to_theme() . '/logo.gif';
+	drupal_add_js(path_to_theme() . '/scripts/jquery.formdefaults.js');
+	drupal_add_js('jQuery(document).ready(function () { jQuery(".form-text").formDefaults(); });', 'inline');
 }
 
 ?>
